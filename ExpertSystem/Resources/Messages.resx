@@ -117,29 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ArchShapeQuestion" xml:space="preserve">
-    <value>Kształt łuku zębowego</value>
-  </data>
-  <data name="CostQuestion" xml:space="preserve">
-    <value>Koszt dla pacjenta</value>
-  </data>
-  <data name="CrownQuestion" xml:space="preserve">
-    <value>Czy występują korony kliniczne?</value>
-  </data>
-  <data name="ImplantationQuestion" xml:space="preserve">
-    <value>Czy są warunki do implantacji?</value>
-  </data>
-  <data name="KoronaNaImplancie" xml:space="preserve">
-    <value>Zalecana jest korona na implancie.</value>
-  </data>
-  <data name="LackQuestion" xml:space="preserve">
-    <value>Rodzaj braków </value>
-  </data>
-  <data name="LocationQuestion" xml:space="preserve">
-    <value>Jakie jest umiejscowienie zębów?</value>
-  </data>
-  <data name="MissingTeethQuestion" xml:space="preserve">
-    <value>Ilu zębów brakuje?</value>
+  <data name="AdditionalSymptomsQuestion" xml:space="preserve">
+    <value>Jakie są dodatkowe objawy?</value>
   </data>
   <data name="MostDwubrzeżnyCyrkonowy" xml:space="preserve">
     <value>Zalecany jest most dwubrzeżny cyrkonowy.</value>
@@ -155,6 +134,9 @@
   </data>
   <data name="MostJednobrzeznyMetalowy" xml:space="preserve">
     <value>Zalecany jest most jednobrzeżny metalowy.</value>
+  </data>
+  <data name="PainQuestion" xml:space="preserve">
+    <value>W którym miejscu występuje ból?</value>
   </data>
   <data name="ProtezaCalkowita" xml:space="preserve">
     <value>Zalecana jest proteza całkowita</value>
@@ -180,14 +162,8 @@
   <data name="ProtezaTeleskopy" xml:space="preserve">
     <value>Zalecana jest proteza na teleskopach.</value>
   </data>
-  <data name="RootQuestion" xml:space="preserve">
-    <value>Czy jest zachowany korzeń?</value>
-  </data>
-  <data name="StrainQuestion" xml:space="preserve">
-    <value>Jakie obciążenie okluzyje występuje?</value>
-  </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>Witamy w systemie doradczym pomgającym wybrać rodzaj pracy protetycznej</value>
+    <value>Witamy w systemie eksperckim pomagającym zdjagnozować chorobę.</value>
   </data>
   <data name="WizytaUSpecjalisty" xml:space="preserve">
     <value>Zalecana jest wizyta u specjalisty.</value>
@@ -197,5 +173,14 @@
   </data>
   <data name="WkladKoronaMetalowa" xml:space="preserve">
     <value>Zalecany jest wkład plus korona metalowa.</value>
+  </data>
+  <data name="HighFeverQuestion" xml:space="preserve">
+    <value>Czy stwierdzono wysoką gorączkę?</value>
+  </data>
+  <data name="OtherSymptomsQuestion" xml:space="preserve">
+    <value>Jakie stwierdzono objawy?</value>
+  </data>
+  <data name="WhatAilsThePatientQuestion" xml:space="preserve">
+    <value>Co dolega pacjentowi?</value>
   </data>
 </root>

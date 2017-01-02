@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using ExpertSystem.Resources;
 using Mommosoft.ExpertSystem;
@@ -8,13 +9,16 @@ namespace ExpertSystem
     public partial class MainWindow
     {
         private readonly Environment environment = new Environment();
+        private readonly AnswersDictionary answersDictionary;
 
         public MainWindow()
         {
+            answersDictionary = new AnswersDictionary();
+
             InitializeComponent();
             this.environment.AddRouter(new DebugRouter());
             this.environment.Clear();
-            this.environment.Load("zeby2.clp");
+            this.environment.Load("illness.clp");
             this.environment.Reset();
             NextUiState();
         }
@@ -52,15 +56,16 @@ namespace ExpertSystem
                         PrevBtn.Content = "Powrót";
                         PrevBtn.Visibility = Visibility.Visible;
                         break;
-
                 }
 
                 using (var validAnswers = (MultifieldValue)evalFact.GetFactSlot("valid-answers"))
                 {
-                    var selected = evalFact.GetFactSlot("response").ToString();
                     foreach (var validAnswer in validAnswers)
                     {
-                        var rb = new RadioButton { Margin = new Thickness(3), Content = validAnswer, GroupName = "answers", IsChecked = selected == (validAnswer).ToString() };
+                        var answer = validAnswer.ToString();
+                        string content;
+                        this.answersDictionary.Answers.TryGetValue(answer, out content);
+                        var rb = new RadioButton { Margin = new Thickness(3), Content = content, GroupName = "answers" };
                         this.AnswersPanel.Children.Add(rb);
                     }
                 }
@@ -75,8 +80,11 @@ namespace ExpertSystem
             {
                 var radio = child as RadioButton;
                 if (radio?.IsChecked != null && radio.IsChecked.Value)
-                    return radio.Content.ToString();
-
+                {
+                    var content = radio.Content.ToString();
+                    var name = this.answersDictionary.Answers.FirstOrDefault(x => x.Value == content).Key;
+                    return name;
+                }              
             }
             return null;
         }
@@ -112,9 +120,7 @@ namespace ExpertSystem
                         NextUiState();
                         break;
                 }
-
             }
-
         }
     }
 }

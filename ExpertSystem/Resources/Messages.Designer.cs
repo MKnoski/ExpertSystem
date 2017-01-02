@@ -22,7 +22,7 @@ namespace ExpertSystem.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    public class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ExpertSystem.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ExpertSystem.Resources.Messages", typeof(Messages).Assembly);
@@ -51,7 +51,7 @@ namespace ExpertSystem.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,81 +61,27 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kształt łuku zębowego.
+        ///   Looks up a localized string similar to Jakie są dodatkowe objawy?.
         /// </summary>
-        internal static string ArchShapeQuestion {
+        public static string AdditionalSymptomsQuestion {
             get {
-                return ResourceManager.GetString("ArchShapeQuestion", resourceCulture);
+                return ResourceManager.GetString("AdditionalSymptomsQuestion", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Koszt dla pacjenta.
+        ///   Looks up a localized string similar to Czy stwierdzono wysoką gorączkę?.
         /// </summary>
-        internal static string CostQuestion {
+        public static string HighFeverQuestion {
             get {
-                return ResourceManager.GetString("CostQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Czy występują korony kliniczne?.
-        /// </summary>
-        internal static string CrownQuestion {
-            get {
-                return ResourceManager.GetString("CrownQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Czy są warunki do implantacji?.
-        /// </summary>
-        internal static string ImplantationQuestion {
-            get {
-                return ResourceManager.GetString("ImplantationQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest korona na implancie..
-        /// </summary>
-        internal static string KoronaNaImplancie {
-            get {
-                return ResourceManager.GetString("KoronaNaImplancie", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rodzaj braków .
-        /// </summary>
-        internal static string LackQuestion {
-            get {
-                return ResourceManager.GetString("LackQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Jakie jest umiejscowienie zębów?.
-        /// </summary>
-        internal static string LocationQuestion {
-            get {
-                return ResourceManager.GetString("LocationQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ilu zębów brakuje?.
-        /// </summary>
-        internal static string MissingTeethQuestion {
-            get {
-                return ResourceManager.GetString("MissingTeethQuestion", resourceCulture);
+                return ResourceManager.GetString("HighFeverQuestion", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest most dwubrzeżny cyrkonowy..
         /// </summary>
-        internal static string MostDwubrzeżnyCyrkonowy {
+        public static string MostDwubrzeżnyCyrkonowy {
             get {
                 return ResourceManager.GetString("MostDwubrzeżnyCyrkonowy", resourceCulture);
             }
@@ -144,7 +90,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest most dwubrzeżny na implantach..
         /// </summary>
-        internal static string MostDwubrzeżnyImplant {
+        public static string MostDwubrzeżnyImplant {
             get {
                 return ResourceManager.GetString("MostDwubrzeżnyImplant", resourceCulture);
             }
@@ -153,7 +99,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest most dwubrzeżny metalowy..
         /// </summary>
-        internal static string MostDwubrzeżnyMetalowy {
+        public static string MostDwubrzeżnyMetalowy {
             get {
                 return ResourceManager.GetString("MostDwubrzeżnyMetalowy", resourceCulture);
             }
@@ -162,7 +108,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest most jednobrzeżny cyrkonowy..
         /// </summary>
-        internal static string MostJednobrzeznyCyrkonowy {
+        public static string MostJednobrzeznyCyrkonowy {
             get {
                 return ResourceManager.GetString("MostJednobrzeznyCyrkonowy", resourceCulture);
             }
@@ -171,16 +117,34 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest most jednobrzeżny metalowy..
         /// </summary>
-        internal static string MostJednobrzeznyMetalowy {
+        public static string MostJednobrzeznyMetalowy {
             get {
                 return ResourceManager.GetString("MostJednobrzeznyMetalowy", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jakie stwierdzono objawy?.
+        /// </summary>
+        public static string OtherSymptomsQuestion {
+            get {
+                return ResourceManager.GetString("OtherSymptomsQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to W którym miejscu występuje ból?.
+        /// </summary>
+        public static string PainQuestion {
+            get {
+                return ResourceManager.GetString("PainQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza całkowita.
         /// </summary>
-        internal static string ProtezaCalkowita {
+        public static string ProtezaCalkowita {
             get {
                 return ResourceManager.GetString("ProtezaCalkowita", resourceCulture);
             }
@@ -189,7 +153,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza całkowita na lokatorach..
         /// </summary>
-        internal static string ProtezaCalkowitaLokatory {
+        public static string ProtezaCalkowitaLokatory {
             get {
                 return ResourceManager.GetString("ProtezaCalkowitaLokatory", resourceCulture);
             }
@@ -198,7 +162,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza częściowa..
         /// </summary>
-        internal static string ProtezaCzesciowa {
+        public static string ProtezaCzesciowa {
             get {
                 return ResourceManager.GetString("ProtezaCzesciowa", resourceCulture);
             }
@@ -207,7 +171,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza OVD (overdenture)..
         /// </summary>
-        internal static string ProtezaOvd {
+        public static string ProtezaOvd {
             get {
                 return ResourceManager.GetString("ProtezaOvd", resourceCulture);
             }
@@ -216,7 +180,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zaleacana jest proteza szkieletowa..
         /// </summary>
-        internal static string ProtezaSzkieletowa {
+        public static string ProtezaSzkieletowa {
             get {
                 return ResourceManager.GetString("ProtezaSzkieletowa", resourceCulture);
             }
@@ -225,7 +189,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza szkieletowa z ryglem..
         /// </summary>
-        internal static string ProtezaSzkieletowaRygiel {
+        public static string ProtezaSzkieletowaRygiel {
             get {
                 return ResourceManager.GetString("ProtezaSzkieletowaRygiel", resourceCulture);
             }
@@ -234,7 +198,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza szkieletowa z zatrzaskami..
         /// </summary>
-        internal static string ProtezaSzkieletowaZatrzaski {
+        public static string ProtezaSzkieletowaZatrzaski {
             get {
                 return ResourceManager.GetString("ProtezaSzkieletowaZatrzaski", resourceCulture);
             }
@@ -243,43 +207,34 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecana jest proteza na teleskopach..
         /// </summary>
-        internal static string ProtezaTeleskopy {
+        public static string ProtezaTeleskopy {
             get {
                 return ResourceManager.GetString("ProtezaTeleskopy", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Czy jest zachowany korzeń?.
+        ///   Looks up a localized string similar to Witamy w systemie eksperckim pomagającym zdjagnozować chorobę..
         /// </summary>
-        internal static string RootQuestion {
-            get {
-                return ResourceManager.GetString("RootQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Jakie obciążenie okluzyje występuje?.
-        /// </summary>
-        internal static string StrainQuestion {
-            get {
-                return ResourceManager.GetString("StrainQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Witamy w systemie doradczym pomgającym wybrać rodzaj pracy protetycznej.
-        /// </summary>
-        internal static string WelcomeMessage {
+        public static string WelcomeMessage {
             get {
                 return ResourceManager.GetString("WelcomeMessage", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Co dolega pacjentowi?.
+        /// </summary>
+        public static string WhatAilsThePatientQuestion {
+            get {
+                return ResourceManager.GetString("WhatAilsThePatientQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zalecana jest wizyta u specjalisty..
         /// </summary>
-        internal static string WizytaUSpecjalisty {
+        public static string WizytaUSpecjalisty {
             get {
                 return ResourceManager.GetString("WizytaUSpecjalisty", resourceCulture);
             }
@@ -288,7 +243,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest wkład plus korona cyrkonowa..
         /// </summary>
-        internal static string WkladKoronaCyrkonowa {
+        public static string WkladKoronaCyrkonowa {
             get {
                 return ResourceManager.GetString("WkladKoronaCyrkonowa", resourceCulture);
             }
@@ -297,7 +252,7 @@ namespace ExpertSystem.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Zalecany jest wkład plus korona metalowa..
         /// </summary>
-        internal static string WkladKoronaMetalowa {
+        public static string WkladKoronaMetalowa {
             get {
                 return ResourceManager.GetString("WkladKoronaMetalowa", resourceCulture);
             }
