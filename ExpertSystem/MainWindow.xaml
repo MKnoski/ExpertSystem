@@ -5,17 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExpertSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-
-    <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/ButtonStyle.xaml"></ResourceDictionary>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
+        ResizeMode="NoResize" Title="System ekspercki" Height="350" Width="525">
+    <StackPanel Orientation="Vertical">
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -23,24 +15,15 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>-->
 
-        <StackPanel Name="QuestionPanel" Margin="5" Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="2" >
-            <Label Name="QuestionLbl" FontWeight="Bold"></Label>
+        <StackPanel Name="QuestionPanel" Margin="5" Orientation="Horizontal">
+            <TextBlock Name="QuestionText" Width="500" FontSize="16" Height="40" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontWeight="Bold"></TextBlock>
         </StackPanel>
-        <StackPanel Name="AnswersPanel" Margin="5" Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="2">
-            <RadioButton GroupName="answers" Content="Tak"></RadioButton>
-            <RadioButton GroupName="answers" Content="Nie"></RadioButton>
-        </StackPanel>
-        <Button Margin="5" Padding="3" MinHeight="40" MinWidth="100" Name="PrevBtn" Content="Powrót"  HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Click="NextBtn_OnClick"></Button>
-        <Button Margin="5" Padding="3" MinHeight="40" MinWidth="100" Name="NextBtn"  HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Click="NextBtn_OnClick" ></Button>
-        <!--<Button Margin="5" Padding="3" MinHeight="40" MinWidth="100" Name="RestartBtn" Content="Start" HorizontalAlignment="Right"  Grid.Column="1" Grid.Row="2" Click="RestartBtn_OnClick" ></Button>-->
-
-
-        <!--<WrapPanel Margin="5" HorizontalAlignment="Stretch"  Grid.Row="2" Name="ButtonPanel" Orientation="Horizontal">
-            
-            <Label HorizontalAlignment="Stretch"></Label>
-            <Button Name="NextBtn" Content="Dalej" HorizontalAlignment="Right" ></Button>
-        </WrapPanel>-->
-    </Grid>
+        <StackPanel Name="AnswersPanel" Height="200" Margin="5" HorizontalAlignment="Center" Orientation="Vertical"></StackPanel>
+        <DockPanel Width="500">
+        <Button Margin="5" Padding="3" Height="40" Width="100" Name="PrevBtn" Content="Powrót" HorizontalAlignment="Left" Click="NextBtn_OnClick"></Button>
+        <Button Margin="5" Padding="3" Height="40" Width="100" Name="NextBtn" HorizontalAlignment="Right"  Click="NextBtn_OnClick" ></Button>
+        </DockPanel>
+    </StackPanel>
 </Window>

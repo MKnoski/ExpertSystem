@@ -70,56 +70,38 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stwierdzono przeziębienie. Należy przyjmować witaminy, anspirynę i spędzić min. 2 dni w łóżku..
+        /// </summary>
+        public static string ColdTherapy {
+            get {
+                return ResourceManager.GetString("ColdTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stwierdzono grypę. Należy przyjmować antybiotyk i spędzić min. tydzień w łóżku..
+        /// </summary>
+        public static string FluTherapy {
+            get {
+                return ResourceManager.GetString("FluTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stwierdzono zatrucie pokarmowe. Należy stosować dietę i przyjmować krople żołądkowe..
+        /// </summary>
+        public static string FoodPoisoningTherapy {
+            get {
+                return ResourceManager.GetString("FoodPoisoningTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Czy stwierdzono wysoką gorączkę?.
         /// </summary>
         public static string HighFeverQuestion {
             get {
                 return ResourceManager.GetString("HighFeverQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest most dwubrzeżny cyrkonowy..
-        /// </summary>
-        public static string MostDwubrzeżnyCyrkonowy {
-            get {
-                return ResourceManager.GetString("MostDwubrzeżnyCyrkonowy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest most dwubrzeżny na implantach..
-        /// </summary>
-        public static string MostDwubrzeżnyImplant {
-            get {
-                return ResourceManager.GetString("MostDwubrzeżnyImplant", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest most dwubrzeżny metalowy..
-        /// </summary>
-        public static string MostDwubrzeżnyMetalowy {
-            get {
-                return ResourceManager.GetString("MostDwubrzeżnyMetalowy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest most jednobrzeżny cyrkonowy..
-        /// </summary>
-        public static string MostJednobrzeznyCyrkonowy {
-            get {
-                return ResourceManager.GetString("MostJednobrzeznyCyrkonowy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest most jednobrzeżny metalowy..
-        /// </summary>
-        public static string MostJednobrzeznyMetalowy {
-            get {
-                return ResourceManager.GetString("MostJednobrzeznyMetalowy", resourceCulture);
             }
         }
         
@@ -142,79 +124,115 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza całkowita.
+        ///   Looks up a localized string similar to Zalecana jest wizyta u kardiologa..
         /// </summary>
-        public static string ProtezaCalkowita {
+        public static string VisitToACardiologist {
             get {
-                return ResourceManager.GetString("ProtezaCalkowita", resourceCulture);
+                return ResourceManager.GetString("VisitToACardiologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza całkowita na lokatorach..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u dermatologa..
         /// </summary>
-        public static string ProtezaCalkowitaLokatory {
+        public static string VisitToADermatologist {
             get {
-                return ResourceManager.GetString("ProtezaCalkowitaLokatory", resourceCulture);
+                return ResourceManager.GetString("VisitToADermatologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza częściowa..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u endokrynologa..
         /// </summary>
-        public static string ProtezaCzesciowa {
+        public static string VisitToAEndocrinologist {
             get {
-                return ResourceManager.GetString("ProtezaCzesciowa", resourceCulture);
+                return ResourceManager.GetString("VisitToAEndocrinologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza OVD (overdenture)..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u gastrologa..
         /// </summary>
-        public static string ProtezaOvd {
+        public static string VisitToAGastroenterologist {
             get {
-                return ResourceManager.GetString("ProtezaOvd", resourceCulture);
+                return ResourceManager.GetString("VisitToAGastroenterologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zaleacana jest proteza szkieletowa..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u laryngologa..
         /// </summary>
-        public static string ProtezaSzkieletowa {
+        public static string VisitToALaryngologist {
             get {
-                return ResourceManager.GetString("ProtezaSzkieletowa", resourceCulture);
+                return ResourceManager.GetString("VisitToALaryngologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza szkieletowa z ryglem..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u alergologa..
         /// </summary>
-        public static string ProtezaSzkieletowaRygiel {
+        public static string VisitToAnAllergist {
             get {
-                return ResourceManager.GetString("ProtezaSzkieletowaRygiel", resourceCulture);
+                return ResourceManager.GetString("VisitToAnAllergist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza szkieletowa z zatrzaskami..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u neurologa..
         /// </summary>
-        public static string ProtezaSzkieletowaZatrzaski {
+        public static string VisitToANeurologist {
             get {
-                return ResourceManager.GetString("ProtezaSzkieletowaZatrzaski", resourceCulture);
+                return ResourceManager.GetString("VisitToANeurologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest proteza na teleskopach..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u okulisty..
         /// </summary>
-        public static string ProtezaTeleskopy {
+        public static string VisitToAnOphthalmologist {
             get {
-                return ResourceManager.GetString("ProtezaTeleskopy", resourceCulture);
+                return ResourceManager.GetString("VisitToAnOphthalmologist", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Witamy w systemie eksperckim pomagającym zdjagnozować chorobę..
+        ///   Looks up a localized string similar to Zalecana jest wizyta u pulmonologa..
+        /// </summary>
+        public static string VisitToAPulmonologist {
+            get {
+                return ResourceManager.GetString("VisitToAPulmonologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u specjalisty..
+        /// </summary>
+        public static string VisitToASpecialist {
+            get {
+                return ResourceManager.GetString("VisitToASpecialist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u trychologa..
+        /// </summary>
+        public static string VisitToATrichologist {
+            get {
+                return ResourceManager.GetString("VisitToATrichologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zaleca się przyjmować magnez, witamy oraz uprawiać sport..
+        /// </summary>
+        public static string VitaminAndSportTherapy {
+            get {
+                return ResourceManager.GetString("VitaminAndSportTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Witamy w systemie eksperckim pomagającym zdiagnozować chorobę..
         /// </summary>
         public static string WelcomeMessage {
             get {
@@ -228,33 +246,6 @@ namespace ExpertSystem.Resources {
         public static string WhatAilsThePatientQuestion {
             get {
                 return ResourceManager.GetString("WhatAilsThePatientQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecana jest wizyta u specjalisty..
-        /// </summary>
-        public static string WizytaUSpecjalisty {
-            get {
-                return ResourceManager.GetString("WizytaUSpecjalisty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest wkład plus korona cyrkonowa..
-        /// </summary>
-        public static string WkladKoronaCyrkonowa {
-            get {
-                return ResourceManager.GetString("WkladKoronaCyrkonowa", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zalecany jest wkład plus korona metalowa..
-        /// </summary>
-        public static string WkladKoronaMetalowa {
-            get {
-                return ResourceManager.GetString("WkladKoronaMetalowa", resourceCulture);
             }
         }
     }

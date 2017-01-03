@@ -18,7 +18,7 @@ namespace ExpertSystem
             InitializeComponent();
             this.environment.AddRouter(new DebugRouter());
             this.environment.Clear();
-            this.environment.Load("illness.clp");
+            this.environment.Load("Rules/illness.clp");
             this.environment.Reset();
             NextUiState();
         }
@@ -70,7 +70,7 @@ namespace ExpertSystem
                     }
                 }
 
-                QuestionLbl.Content = Messages.ResourceManager.GetString((SymbolValue)evalFact.GetFactSlot("display"));
+                this.QuestionText.Text = Messages.ResourceManager.GetString((SymbolValue)evalFact.GetFactSlot("display"));
             }
         }
 

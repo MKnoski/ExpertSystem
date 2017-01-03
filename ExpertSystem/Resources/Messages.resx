@@ -120,59 +120,14 @@
   <data name="AdditionalSymptomsQuestion" xml:space="preserve">
     <value>Jakie są dodatkowe objawy?</value>
   </data>
-  <data name="MostDwubrzeżnyCyrkonowy" xml:space="preserve">
-    <value>Zalecany jest most dwubrzeżny cyrkonowy.</value>
-  </data>
-  <data name="MostDwubrzeżnyImplant" xml:space="preserve">
-    <value>Zalecany jest most dwubrzeżny na implantach.</value>
-  </data>
-  <data name="MostDwubrzeżnyMetalowy" xml:space="preserve">
-    <value>Zalecany jest most dwubrzeżny metalowy.</value>
-  </data>
-  <data name="MostJednobrzeznyCyrkonowy" xml:space="preserve">
-    <value>Zalecany jest most jednobrzeżny cyrkonowy.</value>
-  </data>
-  <data name="MostJednobrzeznyMetalowy" xml:space="preserve">
-    <value>Zalecany jest most jednobrzeżny metalowy.</value>
-  </data>
   <data name="PainQuestion" xml:space="preserve">
     <value>W którym miejscu występuje ból?</value>
   </data>
-  <data name="ProtezaCalkowita" xml:space="preserve">
-    <value>Zalecana jest proteza całkowita</value>
-  </data>
-  <data name="ProtezaCalkowitaLokatory" xml:space="preserve">
-    <value>Zalecana jest proteza całkowita na lokatorach.</value>
-  </data>
-  <data name="ProtezaCzesciowa" xml:space="preserve">
-    <value>Zalecana jest proteza częściowa.</value>
-  </data>
-  <data name="ProtezaOvd" xml:space="preserve">
-    <value>Zalecana jest proteza OVD (overdenture).</value>
-  </data>
-  <data name="ProtezaSzkieletowa" xml:space="preserve">
-    <value>Zaleacana jest proteza szkieletowa.</value>
-  </data>
-  <data name="ProtezaSzkieletowaRygiel" xml:space="preserve">
-    <value>Zalecana jest proteza szkieletowa z ryglem.</value>
-  </data>
-  <data name="ProtezaSzkieletowaZatrzaski" xml:space="preserve">
-    <value>Zalecana jest proteza szkieletowa z zatrzaskami.</value>
-  </data>
-  <data name="ProtezaTeleskopy" xml:space="preserve">
-    <value>Zalecana jest proteza na teleskopach.</value>
-  </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>Witamy w systemie eksperckim pomagającym zdjagnozować chorobę.</value>
+    <value>Witamy w systemie eksperckim pomagającym zdiagnozować chorobę.</value>
   </data>
-  <data name="WizytaUSpecjalisty" xml:space="preserve">
+  <data name="VisitToASpecialist" xml:space="preserve">
     <value>Zalecana jest wizyta u specjalisty.</value>
-  </data>
-  <data name="WkladKoronaCyrkonowa" xml:space="preserve">
-    <value>Zalecany jest wkład plus korona cyrkonowa.</value>
-  </data>
-  <data name="WkladKoronaMetalowa" xml:space="preserve">
-    <value>Zalecany jest wkład plus korona metalowa.</value>
   </data>
   <data name="HighFeverQuestion" xml:space="preserve">
     <value>Czy stwierdzono wysoką gorączkę?</value>
@@ -182,5 +137,47 @@
   </data>
   <data name="WhatAilsThePatientQuestion" xml:space="preserve">
     <value>Co dolega pacjentowi?</value>
+  </data>
+  <data name="ColdTherapy" xml:space="preserve">
+    <value>Stwierdzono przeziębienie. Należy przyjmować witaminy, anspirynę i spędzić min. 2 dni w łóżku.</value>
+  </data>
+  <data name="FluTherapy" xml:space="preserve">
+    <value>Stwierdzono grypę. Należy przyjmować antybiotyk i spędzić min. tydzień w łóżku.</value>
+  </data>
+  <data name="FoodPoisoningTherapy" xml:space="preserve">
+    <value>Stwierdzono zatrucie pokarmowe. Należy stosować dietę i przyjmować krople żołądkowe.</value>
+  </data>
+  <data name="VisitToACardiologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u kardiologa.</value>
+  </data>
+  <data name="VisitToADermatologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u dermatologa.</value>
+  </data>
+  <data name="VisitToAEndocrinologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u endokrynologa.</value>
+  </data>
+  <data name="VisitToAGastroenterologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u gastrologa.</value>
+  </data>
+  <data name="VisitToALaryngologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u laryngologa.</value>
+  </data>
+  <data name="VisitToAnAllergist" xml:space="preserve">
+    <value>Zalecana jest wizyta u alergologa.</value>
+  </data>
+  <data name="VisitToANeurologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u neurologa.</value>
+  </data>
+  <data name="VisitToAnOphthalmologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u okulisty.</value>
+  </data>
+  <data name="VisitToAPulmonologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u pulmonologa.</value>
+  </data>
+  <data name="VisitToATrichologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u trychologa.</value>
+  </data>
+  <data name="VitaminAndSportTherapy" xml:space="preserve">
+    <value>Zaleca się przyjmować magnez, witamy oraz uprawiać sport.</value>
   </data>
 </root>
