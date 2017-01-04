@@ -44,21 +44,21 @@
 	=>
 	(assert (UI-state (display PainQuestion)
                       (relation-asserted pain-in-one-place)
-                      (valid-answers head lungs stomach ear eye heart)))) 
+                      (valid-answers head lungs stomach ear eye heart teeth kidneys)))) 
 
 (defrule determine-additional-symptomes ""	
 	(symptoms-types bad-mood) 
 	=>
 	(assert (UI-state (display AdditionalSymptomsQuestion)
                       (relation-asserted additional-symptomes)
-                      (valid-answers none food-poisoning cold flu))))
+                      (valid-answers none food-poisoning depression dizziness cold flu))))
 
 (defrule determine-other-symptomes ""	
 	(symptoms-types other) 
 	=>
 	(assert (UI-state (display OtherSymptomsQuestion)
                       (relation-asserted other-symptomes)
-                      (valid-answers skin overstrain hairs allergy))))
+                      (valid-answers skin overstrain hairs allergy obesity senility reproductive-system rheumatological-problems))))
 
 (defrule determine-high-fever ""
 	(symptoms-types bad-mood)	
@@ -66,7 +66,15 @@
 	=>
 	(assert (UI-state (display HighFeverQuestion)
                       (relation-asserted high-fever)
-                      (valid-answers yes no))))					 
+                      (valid-answers yes no))))		
+					  
+   (defrule determine-gender ""
+	(symptoms-types other)	
+	(other-symptomes reproductive-system) 
+	=>
+	(assert (UI-state (display GenderQuestion)
+                      (relation-asserted gender)
+                      (valid-answers man woman))))			 
 					 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;                          CONCLUSIONS                         ;;;
@@ -113,6 +121,20 @@
      =>
 	(assert (UI-state (display VisitToACardiologist)
 					  (state final))))   
+
+   (defrule dentist ""
+	(symptoms-types pain-in-one-place)
+	(pain-in-one-place teeth)
+     =>
+	(assert (UI-state (display VisitToADentist)
+					  (state final))))  
+
+   (defrule nephrologist ""
+	(symptoms-types pain-in-one-place)
+	(pain-in-one-place kidneys)
+     =>
+	(assert (UI-state (display VisitToANephrologist)
+					  (state final)))) 
   
   (defrule dermatologist ""
 	(symptoms-types other)
@@ -142,6 +164,43 @@
 	(assert (UI-state (display VisitToAnAllergist)
 					  (state final)))) 
 
+  (defrule bariatrist ""
+	(symptoms-types other)
+	(other-symptomes obesity)
+     =>
+	(assert (UI-state (display VisitToABariatrist)
+					  (state final)))) 
+					   
+   (defrule geriatrician ""
+	(symptoms-types other)
+	(other-symptomes senility)
+     =>
+	(assert (UI-state (display VisitToAGeriatrician)
+					  (state final)))) 
+
+   (defrule rheumatologist  ""
+	(symptoms-types other)
+	(other-symptomes rheumatological-problems)
+     =>
+	(assert (UI-state (display VisitToARheumatologist )
+					  (state final)))) 
+
+   (defrule urologist  ""
+	(symptoms-types other)
+	(other-symptomes reproductive-system)
+	(gender man)
+     =>
+	(assert (UI-state (display VisitToAnUrologist)
+					  (state final)))) 
+
+   (defrule gynecologist ""
+	(symptoms-types other)
+	(other-symptomes reproductive-system)
+	(gender woman)
+     =>
+	(assert (UI-state (display VisitToAGynecologist)
+					  (state final)))) 
+
   (defrule bad-mood ""
 	(symptoms-types bad-mood)
 	(additional-symptomes none)
@@ -154,6 +213,20 @@
 	(additional-symptomes food-poisoning)
      =>
 	(assert (UI-state (display FoodPoisoningTherapy)
+					  (state final))))	
+
+   (defrule depression ""
+	(symptoms-types bad-mood)
+	(additional-symptomes depression)
+     =>
+	(assert (UI-state (display VisitToAPsychologist)
+					  (state final))))	  
+
+   (defrule dizziness ""
+	(symptoms-types bad-mood)
+	(additional-symptomes dizziness)
+     =>
+	(assert (UI-state (display BetahistineTherapy)
 					  (state final))))	
 					  				   
   (defrule flu ""

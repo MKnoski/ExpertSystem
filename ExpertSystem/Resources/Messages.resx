@@ -180,4 +180,34 @@
   <data name="VitaminAndSportTherapy" xml:space="preserve">
     <value>Zaleca się przyjmować magnez, witamy oraz uprawiać sport.</value>
   </data>
+  <data name="BetahistineTherapy" xml:space="preserve">
+    <value>Należy zastosować tabletki z betahistyną.</value>
+  </data>
+  <data name="GenderQuestion" xml:space="preserve">
+    <value>Jaka jest płęć pacjenta?</value>
+  </data>
+  <data name="VisitToABariatrist" xml:space="preserve">
+    <value>Zalecana jest wizyta u lekarza bariatry.</value>
+  </data>
+  <data name="VisitToADentist" xml:space="preserve">
+    <value>Zalecana jest wizyta u dentysty.</value>
+  </data>
+  <data name="VisitToAGeriatrician" xml:space="preserve">
+    <value>Zalecana jest wizyta u lekarza geriatry.</value>
+  </data>
+  <data name="VisitToAGynecologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u ginekologa.</value>
+  </data>
+  <data name="VisitToANephrologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u nefrologa.</value>
+  </data>
+  <data name="VisitToAnUrologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u urologa.</value>
+  </data>
+  <data name="VisitToAPsychologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u psychologa.</value>
+  </data>
+  <data name="VisitToARheumatologist" xml:space="preserve">
+    <value>Zalecana jest wizyta u reumatologa.</value>
+  </data>
 </root>

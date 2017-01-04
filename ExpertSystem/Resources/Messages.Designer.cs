@@ -70,6 +70,15 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Należy zastosować tabletki z betahistyną..
+        /// </summary>
+        public static string BetahistineTherapy {
+            get {
+                return ResourceManager.GetString("BetahistineTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stwierdzono przeziębienie. Należy przyjmować witaminy, anspirynę i spędzić min. 2 dni w łóżku..
         /// </summary>
         public static string ColdTherapy {
@@ -93,6 +102,15 @@ namespace ExpertSystem.Resources {
         public static string FoodPoisoningTherapy {
             get {
                 return ResourceManager.GetString("FoodPoisoningTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jaka jest płęć pacjenta?.
+        /// </summary>
+        public static string GenderQuestion {
+            get {
+                return ResourceManager.GetString("GenderQuestion", resourceCulture);
             }
         }
         
@@ -124,11 +142,29 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u lekarza bariatry..
+        /// </summary>
+        public static string VisitToABariatrist {
+            get {
+                return ResourceManager.GetString("VisitToABariatrist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zalecana jest wizyta u kardiologa..
         /// </summary>
         public static string VisitToACardiologist {
             get {
                 return ResourceManager.GetString("VisitToACardiologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u dentysty..
+        /// </summary>
+        public static string VisitToADentist {
+            get {
+                return ResourceManager.GetString("VisitToADentist", resourceCulture);
             }
         }
         
@@ -160,6 +196,24 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u lekarza geriatry..
+        /// </summary>
+        public static string VisitToAGeriatrician {
+            get {
+                return ResourceManager.GetString("VisitToAGeriatrician", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u ginekologa..
+        /// </summary>
+        public static string VisitToAGynecologist {
+            get {
+                return ResourceManager.GetString("VisitToAGynecologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zalecana jest wizyta u laryngologa..
         /// </summary>
         public static string VisitToALaryngologist {
@@ -174,6 +228,15 @@ namespace ExpertSystem.Resources {
         public static string VisitToAnAllergist {
             get {
                 return ResourceManager.GetString("VisitToAnAllergist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u nefrologa..
+        /// </summary>
+        public static string VisitToANephrologist {
+            get {
+                return ResourceManager.GetString("VisitToANephrologist", resourceCulture);
             }
         }
         
@@ -196,11 +259,38 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u urologa..
+        /// </summary>
+        public static string VisitToAnUrologist {
+            get {
+                return ResourceManager.GetString("VisitToAnUrologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u psychologa..
+        /// </summary>
+        public static string VisitToAPsychologist {
+            get {
+                return ResourceManager.GetString("VisitToAPsychologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zalecana jest wizyta u pulmonologa..
         /// </summary>
         public static string VisitToAPulmonologist {
             get {
                 return ResourceManager.GetString("VisitToAPulmonologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u reumatologa..
+        /// </summary>
+        public static string VisitToARheumatologist {
+            get {
+                return ResourceManager.GetString("VisitToARheumatologist", resourceCulture);
             }
         }
         
