@@ -21,7 +21,7 @@
 ;;;                          STARTUP                             ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defrule system-banner ""
+(defrule welcome-message ""
 =>
 (assert (UI-state (display WelcomeMessage)
                     (relation-asserted start)
@@ -37,37 +37,43 @@
 	=>	
     (assert (UI-state (display WhatAilsThePatientQuestion)
 					  (relation-asserted symptoms-types)
-					  (valid-answers pain-in-one-place bad-mood other)))) 
+					  (valid-answers pain-in-one-place bad-mood cold-and-flu-symptoms other)))) 
 
 (defrule determine-pain ""	
 	(symptoms-types pain-in-one-place) 
 	=>
 	(assert (UI-state (display PainQuestion)
                       (relation-asserted pain-in-one-place)
-                      (valid-answers head lungs stomach ear eye heart teeth kidneys)))) 
+                      (valid-answers head lungs stomach ear eye heart teeth kidneys nose)))) 
 
 (defrule determine-additional-symptomes ""	
 	(symptoms-types bad-mood) 
 	=>
 	(assert (UI-state (display AdditionalSymptomsQuestion)
                       (relation-asserted additional-symptomes)
-                      (valid-answers none food-poisoning depression dizziness cold flu))))
+                      (valid-answers none food-poisoning depression dizziness))))
 
 (defrule determine-other-symptomes ""	
 	(symptoms-types other) 
 	=>
 	(assert (UI-state (display OtherSymptomsQuestion)
                       (relation-asserted other-symptomes)
-                      (valid-answers skin overstrain hairs allergy obesity senility reproductive-system rheumatological-problems))))
+                      (valid-answers skin overstrain hairs allergy obesity senility reproductive-system arthralgia bone-ache nutritional-problems))))
 
 (defrule determine-high-fever ""
-	(symptoms-types bad-mood)	
-	(additional-symptomes flu) 
+	(symptoms-types cold-and-flu-symptoms)
 	=>
 	(assert (UI-state (display HighFeverQuestion)
                       (relation-asserted high-fever)
                       (valid-answers yes no))))		
 					  
+   (defrule determine-sore-throat ""	
+	(symptoms-types cold-and-flu-symptoms) 
+	=>
+	(assert (UI-state (display SoreThroatQuestion)
+                      (relation-asserted sore-throat)
+                      (valid-answers yes no)))) 
+
    (defrule determine-gender ""
 	(symptoms-types other)	
 	(other-symptomes reproductive-system) 
@@ -135,6 +141,13 @@
      =>
 	(assert (UI-state (display VisitToANephrologist)
 					  (state final)))) 
+
+   (defrule otolaryngologist ""
+	(symptoms-types pain-in-one-place)
+	(pain-in-one-place nose)
+     =>
+	(assert (UI-state (display VisitToAnOtolaryngologist)
+					  (state final)))) 
   
   (defrule dermatologist ""
 	(symptoms-types other)
@@ -180,11 +193,25 @@
 
    (defrule rheumatologist  ""
 	(symptoms-types other)
-	(other-symptomes rheumatological-problems)
+	(other-symptomes arthralgia)
      =>
 	(assert (UI-state (display VisitToARheumatologist )
 					  (state final)))) 
 
+   (defrule orthopaedist  ""
+	(symptoms-types other)
+	(other-symptomes bone-ache)
+     =>
+	(assert (UI-state (display VisitToAOrthopaedist )
+					  (state final)))) 	
+   
+   (defrule dietician  ""
+	(symptoms-types other)
+	(other-symptomes nutritional-problems)
+     =>
+	(assert (UI-state (display VisitToADietician )
+					  (state final)))) 						  
+					  	  
    (defrule urologist  ""
 	(symptoms-types other)
 	(other-symptomes reproductive-system)
@@ -230,22 +257,24 @@
 					  (state final))))	
 					  				   
   (defrule flu ""
-	(symptoms-types bad-mood)
-	(additional-symptomes flu)
+    (symptoms-types cold-and-flu-symptoms)
 	(high-fever yes)
+	(sore-throat no)
      =>
 	(assert (UI-state (display FluTherapy)
 					  (state final))))	
+
+  (defrule angina ""
+    (symptoms-types cold-and-flu-symptoms)
+	(high-fever yes)
+	(sore-throat yes)
+     =>
+	(assert (UI-state (display AnginaTherapy)
+					  (state final))))	
 					  				  				   
   (defrule cold ""
-	(symptoms-types bad-mood)
-	(or
-		(and
-			(additional-symptomes flu)
-			(high-fever no)
-		)
-		(additional-symptomes cold)	
-	)
+	(symptoms-types cold-and-flu-symptoms)
+	(high-fever no)
     =>
 	(assert (UI-state (display ColdTherapy)
 					  (state final))))  

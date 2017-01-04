@@ -10,6 +10,7 @@ namespace ExpertSystem.Resources
             {
                 { "pain-in-one-place", "Silny ból w jednym miejscu" },
                 { "bad-mood", "Ogólne złe samopoczucie" },
+                { "cold-and-flu-symptoms", "Objawy przeziębienia i grypy" },
                 { "other", "Inne" },
 
                 { "head", "Ból głowy" },
@@ -20,6 +21,7 @@ namespace ExpertSystem.Resources
                 { "heart", "Ból serca" },
                 { "teeth", "Ból zęba" },
                 { "kidneys", "Ból nerek" },
+                { "nose", "Ból nosa" },
 
                 { "skin", "Świąd skóry" },
                 { "overstrain", "Przemęczenie" },
@@ -28,14 +30,14 @@ namespace ExpertSystem.Resources
                 { "obesity", "Problem z otyłością" },
                 { "senility", "Problem starcze" },
                 { "reproductive-system", "Problemy układu płciowego" },
-                { "rheumatological-problems", "Ból stawów lub/i kości" },
+                { "arthralgia", "Ból stawów" },
+                { "bone-ache", "Ból kości" },
+                { "nutritional-problems", "Problemy żywieniowe" },
 
                 { "none", "Brak" },
                 { "food-poisoning", "Nudności, brak apetytu, wymioty" },
                 { "depression", "Depresja" },
                 { "dizziness", "Zawroty głowy" },
-                { "cold", "Ból głowy, ból stawów" },
-                { "flu", "Kaszel oraz katar" },
 
                 { "yes", "Tak" },
                 { "no", "Nie" },

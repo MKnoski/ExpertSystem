@@ -16,7 +16,6 @@ namespace ExpertSystem
             answersDictionary = new AnswersDictionary();
 
             InitializeComponent();
-            this.environment.AddRouter(new DebugRouter());
             this.environment.Clear();
             this.environment.Load("Rules/illness.clp");
             this.environment.Reset();

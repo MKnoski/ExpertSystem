@@ -70,6 +70,15 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stwierdzono anginę. Należy przyjmować antybiotyk, płukać gardło i spędzić min. tydzień w łóżku..
+        /// </summary>
+        public static string AnginaTherapy {
+            get {
+                return ResourceManager.GetString("AnginaTherapy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Należy zastosować tabletki z betahistyną..
         /// </summary>
         public static string BetahistineTherapy {
@@ -106,7 +115,7 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jaka jest płęć pacjenta?.
+        ///   Looks up a localized string similar to Jaka jest płeć pacjenta?.
         /// </summary>
         public static string GenderQuestion {
             get {
@@ -138,6 +147,15 @@ namespace ExpertSystem.Resources {
         public static string PainQuestion {
             get {
                 return ResourceManager.GetString("PainQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Czy dolega ból gardła?.
+        /// </summary>
+        public static string SoreThroatQuestion {
+            get {
+                return ResourceManager.GetString("SoreThroatQuestion", resourceCulture);
             }
         }
         
@@ -174,6 +192,15 @@ namespace ExpertSystem.Resources {
         public static string VisitToADermatologist {
             get {
                 return ResourceManager.GetString("VisitToADermatologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u dietetyka..
+        /// </summary>
+        public static string VisitToADietician {
+            get {
+                return ResourceManager.GetString("VisitToADietician", resourceCulture);
             }
         }
         
@@ -259,11 +286,29 @@ namespace ExpertSystem.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u otolaryngologa..
+        /// </summary>
+        public static string VisitToAnOtolaryngologist {
+            get {
+                return ResourceManager.GetString("VisitToAnOtolaryngologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zalecana jest wizyta u urologa..
         /// </summary>
         public static string VisitToAnUrologist {
             get {
                 return ResourceManager.GetString("VisitToAnUrologist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zalecana jest wizyta u ortopedy..
+        /// </summary>
+        public static string VisitToAOrthopaedist {
+            get {
+                return ResourceManager.GetString("VisitToAOrthopaedist", resourceCulture);
             }
         }
         
